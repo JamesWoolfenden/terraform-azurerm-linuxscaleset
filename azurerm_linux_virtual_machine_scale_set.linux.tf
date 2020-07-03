@@ -3,7 +3,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "linux" {
   resource_group_name = var.resource_group.name
   location            = var.resource_group.location
   sku                 = var.sku
-  instances           = 1
+  instances           = var.instance_count
   admin_username      = var.admin_username
 
   admin_ssh_key {

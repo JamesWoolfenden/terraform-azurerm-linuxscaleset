@@ -37,10 +37,12 @@ variable "source_image_reference" {
 }
 
 variable "scaleset_name" {
+  type    = string
   default = "example-vmss"
 }
 
 variable "os_disk" {
+  type = map
   default = {
     storage_account_type = "Standard_LRS"
     caching              = "ReadWrite"
@@ -48,5 +50,11 @@ variable "os_disk" {
 }
 
 variable "sku" {
+  type    = string
   default = "Standard_F2"
+}
+
+variable "instance_count" {
+  type    = number
+  default = 1
 }
