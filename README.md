@@ -17,7 +17,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 This is just a very basic example.
 
-Include **module.activemq.tf** this repository as a module in your existing terraform code:
+Include **module.linuxscaleset.tf** this repository as a module in your existing terraform code:
 
 ```terraform
 module "linuxscaleset" {
