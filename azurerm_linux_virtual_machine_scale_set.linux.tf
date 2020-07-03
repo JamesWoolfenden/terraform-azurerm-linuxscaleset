@@ -2,13 +2,13 @@ resource "azurerm_linux_virtual_machine_scale_set" "linux" {
   name                = var.scaleset_name
   resource_group_name = var.resource_group.name
   location            = var.resource_group.location
-  sku                 = "Standard_F2"
+  sku                 = var.sku
   instances           = 1
   admin_username      = var.admin_username
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = file(var.public_key)
+    public_key = tls_private_key.new.public_key_pem
   }
 
   source_image_reference {

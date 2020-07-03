@@ -26,10 +26,6 @@ variable "admin_username" {
   default = "adminuser"
 }
 
-variable "public_key" {
-  default = "~/.ssh/id_rsa.pub"
-}
-
 variable "source_image_reference" {
   type = map
   default = {
@@ -49,4 +45,8 @@ variable "os_disk" {
     storage_account_type = "Standard_LRS"
     caching              = "ReadWrite"
   }
+}
+
+variable "sku" {
+  default = "Standard_F2"
 }

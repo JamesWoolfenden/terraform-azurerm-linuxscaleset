@@ -177,6 +177,8 @@ If you leave the section below in your **README.md** then the pre-commit will au
 | Name | Version |
 |------|---------|
 | azurerm | n/a |
+| local | n/a |
+| tls | n/a |
 
 ## Inputs
 
@@ -186,9 +188,9 @@ If you leave the section below in your **README.md** then the pre-commit will au
 | azurerm\_subnet | (optional) describe your variable | `any` | n/a | yes |
 | common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
 | os\_disk | n/a | `map` | <pre>{<br>  "caching": "ReadWrite",<br>  "storage_account_type": "Standard_LRS"<br>}</pre> | no |
-| public\_key | n/a | `string` | `"~/.ssh/id_rsa.pub"` | no |
 | resource\_group | n/a | `any` | n/a | yes |
 | scaleset\_name | n/a | `string` | `"example-vmss"` | no |
+| sku | n/a | `string` | `"Standard_F2"` | no |
 | source\_image\_reference | n/a | `map` | <pre>{<br>  "offer": "UbuntuServer",<br>  "publisher": "Canonical",<br>  "sku": "16.04-LTS",<br>  "version": "latest"<br>}</pre> | no |
 | subnet | (optional) describe your variable | `map` | <pre>{<br>  "name": "backend",<br>  "resource_group_name": "networking",<br>  "virtual_network_name": "production"<br>}</pre> | no |
 
