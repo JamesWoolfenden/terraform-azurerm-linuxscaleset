@@ -21,8 +21,10 @@ Include **module.linuxscaleset.tf** this repository as a module in your existing
 
 ```terraform
 module "linuxscaleset" {
-  source      = "JamesWoolfenden/linuxscaleset/aws"
-  common_tags = var.common_tags
+  source         = "JamesWoolfenden/linuxscaleset/azurerm"
+  common_tags    = var.common_tags
+  resource_group = azurerm_resource_group.example
+  azurerm_subnet = azurerm_subnet.internal
 }
 ```
 
