@@ -31,35 +31,38 @@ module "linuxscaleset" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
 
 ## Providers
 
-| Name    | Version |
-| ------- | ------- |
-| azurerm | n/a     |
-| local   | n/a     |
-| tls     | n/a     |
+| Name | Version |
+|------|---------|
+| azurerm | n/a |
+| local | n/a |
+| tls | n/a |
 
 ## Inputs
 
-| Name                   | Description                                        | Type     | Default                                                                                                                      | Required |
-| ---------------------- | -------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------- | :------: |
-| admin_username         | n/a                                                | `string` | `"adminuser"`                                                                                                                |    no    |
-| azurerm_subnet         | (optional) describe your variable                  | `any`    | n/a                                                                                                                          |   yes    |
-| common_tags            | This is to help you add tags to your cloud objects | `map`    | n/a                                                                                                                          |   yes    |
-| instance_count         | n/a                                                | `number` | `1`                                                                                                                          |    no    |
-| os_disk                | n/a                                                | `map`    | <pre>{<br> "caching": "ReadWrite",<br> "storage_account_type": "Standard_LRS"<br>}</pre>                                     |    no    |
-| resource_group         | n/a                                                | `any`    | n/a                                                                                                                          |   yes    |
-| scaleset_name          | n/a                                                | `string` | `"example-vmss"`                                                                                                             |    no    |
-| sku                    | n/a                                                | `string` | `"Standard_F2"`                                                                                                              |    no    |
-| source_image_reference | n/a                                                | `map`    | <pre>{<br> "offer": "UbuntuServer",<br> "publisher": "Canonical",<br> "sku": "16.04-LTS",<br> "version": "latest"<br>}</pre> |    no    |
-| subnet                 | (optional) describe your variable                  | `map`    | <pre>{<br> "name": "backend",<br> "resource_group_name": "networking",<br> "virtual_network_name": "production"<br>}</pre>   |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| admin\_username | n/a | `string` | `"adminuser"` | no |
+| azurerm\_subnet | (optional) describe your variable | `any` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| instance\_count | n/a | `number` | `1` | no |
+| os\_disk | n/a | `map(any)` | <pre>{<br>  "caching": "ReadWrite",<br>  "storage_account_type": "Standard_LRS"<br>}</pre> | no |
+| resource\_group | n/a | `any` | n/a | yes |
+| scaleset\_name | n/a | `string` | `"example-vmss"` | no |
+| sku | n/a | `string` | `"Standard_F2"` | no |
+| source\_image\_reference | n/a | `map(any)` | <pre>{<br>  "offer": "UbuntuServer",<br>  "publisher": "Canonical",<br>  "sku": "16.04-LTS",<br>  "version": "latest"<br>}</pre> | no |
+| subnet | (optional) describe your variable | `map(any)` | <pre>{<br>  "name": "backend",<br>  "resource_group_name": "networking",<br>  "virtual_network_name": "production"<br>}</pre> | no |
 
 ## Outputs
 
-| Name      | Description |
-| --------- | ----------- |
-| scale_set | n/a         |
+| Name | Description |
+|------|-------------|
+| scale\_set | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

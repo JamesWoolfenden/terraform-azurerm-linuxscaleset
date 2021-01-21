@@ -1,11 +1,11 @@
 variable "common_tags" {
   description = "This is to help you add tags to your cloud objects"
-  type        = map
+  type        = map(any)
 }
 
 
 variable "subnet" {
-  type        = map
+  type        = map(any)
   description = "(optional) describe your variable"
   default = {
     name                 = "backend"
@@ -27,7 +27,7 @@ variable "admin_username" {
 }
 
 variable "source_image_reference" {
-  type = map
+  type = map(any)
   default = {
     publisher = "Canonical"
     offer     = "UbuntuServer"
@@ -42,7 +42,7 @@ variable "scaleset_name" {
 }
 
 variable "os_disk" {
-  type = map
+  type = map(any)
   default = {
     storage_account_type = "Standard_LRS"
     caching              = "ReadWrite"

@@ -3,5 +3,5 @@ provider "azurerm" {
   features {}
 }
 
-provider "local" {  }
-provider "tls" { }
+provider "local" {}
+provider "tls" {}
