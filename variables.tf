@@ -58,3 +58,12 @@ variable "instance_count" {
   type    = number
   default = 1
 }
+
+
+variable "network_interface" {
+  type = map(any)
+  default = {
+    name    = "examplea"
+    primary = true
+  }
+}

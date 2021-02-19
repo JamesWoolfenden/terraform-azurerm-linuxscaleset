@@ -5,6 +5,8 @@ resource "azurerm_linux_virtual_machine_scale_set" "linux" {
   sku                 = var.sku
   instances           = var.instance_count
   admin_username      = var.admin_username
+  #obvious check.
+  disable_password_authentication = true
 
   admin_ssh_key {
     username   = var.admin_username
@@ -24,8 +26,8 @@ resource "azurerm_linux_virtual_machine_scale_set" "linux" {
   }
 
   network_interface {
-    name    = "example"
-    primary = true
+    name    = var.network_interface["name"]
+    primary = var.network_interface["primary"]
 
     ip_configuration {
       name      = "internal"

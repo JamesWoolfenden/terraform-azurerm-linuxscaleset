@@ -1,5 +1,6 @@
 common_tags = {
-  stage = "development"
+  "createdby" = "terraform"
+  "module"    = "terraform-azurerm-linuxscaleset"
 }
 
 resource_group_name = "examplea"
