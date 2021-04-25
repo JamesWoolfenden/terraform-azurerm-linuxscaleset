@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     azurerm = {
-      version = "2.51.0"
+      version = "2.56.0"
       source  = "hashicorp/azurerm"
     }
     local = { version = "2.0.0"
@@ -9,5 +9,5 @@ terraform {
     tls = { version = "2.0.0"
     source = "hashicorp/tls" }
   }
-  required_version = ">= 0.14"
+  required_version = ">=0.14.8"
 }

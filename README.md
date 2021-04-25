@@ -39,43 +39,43 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| azurerm | n/a |
-| local | n/a |
-| tls | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+| <a name="provider_local"></a> [local](#provider\_local) | n/a |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [azurerm_linux_virtual_machine_scale_set](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine_scale_set) |
-| [local_file](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) |
-| [tls_private_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) |
+| Name | Type |
+|------|------|
+| [azurerm_linux_virtual_machine_scale_set.linux](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine_scale_set) | resource |
+| [local_file.private_key](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) | resource |
+| [tls_private_key.new](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| admin\_username | n/a | `string` | `"adminuser"` | no |
-| azurerm\_subnet | (optional) describe your variable | `any` | n/a | yes |
-| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| instance\_count | n/a | `number` | `1` | no |
-| network\_interface | n/a | `map(any)` | <pre>{<br>  "name": "examplea",<br>  "primary": true<br>}</pre> | no |
-| os\_disk | n/a | `map(any)` | <pre>{<br>  "caching": "ReadWrite",<br>  "storage_account_type": "Standard_LRS"<br>}</pre> | no |
-| resource\_group | n/a | `any` | n/a | yes |
-| scaleset\_name | n/a | `string` | `"example-vmss"` | no |
-| sku | n/a | `string` | `"Standard_F2"` | no |
-| source\_image\_reference | n/a | `map(any)` | <pre>{<br>  "offer": "UbuntuServer",<br>  "publisher": "Canonical",<br>  "sku": "16.04-LTS",<br>  "version": "latest"<br>}</pre> | no |
-| subnet | (optional) describe your variable | `map(any)` | <pre>{<br>  "name": "backend",<br>  "resource_group_name": "networking",<br>  "virtual_network_name": "production"<br>}</pre> | no |
+| <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | n/a | `string` | `"adminuser"` | no |
+| <a name="input_azurerm_subnet"></a> [azurerm\_subnet](#input\_azurerm\_subnet) | (optional) describe your variable | `any` | n/a | yes |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_instance_count"></a> [instance\_count](#input\_instance\_count) | n/a | `number` | `1` | no |
+| <a name="input_network_interface"></a> [network\_interface](#input\_network\_interface) | n/a | `map(any)` | <pre>{<br>  "name": "examplea",<br>  "primary": true<br>}</pre> | no |
+| <a name="input_os_disk"></a> [os\_disk](#input\_os\_disk) | n/a | `map(any)` | <pre>{<br>  "caching": "ReadWrite",<br>  "storage_account_type": "Standard_LRS"<br>}</pre> | no |
+| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | n/a | `any` | n/a | yes |
+| <a name="input_scaleset_name"></a> [scaleset\_name](#input\_scaleset\_name) | n/a | `string` | `"example-vmss"` | no |
+| <a name="input_sku"></a> [sku](#input\_sku) | n/a | `string` | `"Standard_F2"` | no |
+| <a name="input_source_image_reference"></a> [source\_image\_reference](#input\_source\_image\_reference) | n/a | `map(any)` | <pre>{<br>  "offer": "UbuntuServer",<br>  "publisher": "Canonical",<br>  "sku": "16.04-LTS",<br>  "version": "latest"<br>}</pre> | no |
+| <a name="input_subnet"></a> [subnet](#input\_subnet) | (optional) describe your variable | `map(any)` | <pre>{<br>  "name": "backend",<br>  "resource_group_name": "networking",<br>  "virtual_network_name": "production"<br>}</pre> | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| scale\_set | n/a |
+| <a name="output_scale_set"></a> [scale\_set](#output\_scale\_set) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
