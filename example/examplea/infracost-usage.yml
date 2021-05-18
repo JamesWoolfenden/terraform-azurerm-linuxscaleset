@@ -1,2 +1,6 @@
 version: 0.1
-resource_usage: {}
+resource_usage:
+  module.scale.azurerm_linux_virtual_machine_scale_set.linux:
+    instances: 0
+    os_disk:
+      monthly_disk_operations: 0

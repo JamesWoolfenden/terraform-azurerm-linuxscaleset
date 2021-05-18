@@ -1,3 +1,4 @@
 output "scale" {
-  value = module.scale
+  value     = module.scale
+  sensitive = true
 }

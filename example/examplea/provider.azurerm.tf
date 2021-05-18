@@ -2,5 +2,6 @@ provider "azurerm" {
   features {}
 }
 
-provider "local" {}
-provider "tls" {}
+provider "random" {}
+provider "azuread" {}
+provider "null" {}
