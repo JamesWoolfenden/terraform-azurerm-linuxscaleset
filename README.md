@@ -78,6 +78,13 @@ No modules.
 | <a name="output_scale_set"></a> [scale\_set](#output\_scale\_set) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
+## Policy
+
+This is the policy required to build this project:
+
+<!-- BEGINNING OF PRE-COMMIT-PIKE DOCS HOOK -->
+<!-- END OF PRE-COMMIT-PIKE DOCS HOOK -->
+
 ## Related Projects
 
 Check out these related projects.
@@ -129,11 +136,3 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
-[twitter]: https://twitter.com/JimWoolfenden
-[share_twitter]: https://twitter.com/intent/tweet/?text=terraform-azurerm-linuxscaleset&url=https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset
-[share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-azurerm-linuxscaleset&url=https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset
-[share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset
-[share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset
-[share_email]: mailto:?subject=terraform-azurerm-linuxscaleset&body=https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset
