@@ -1,6 +1,6 @@
 # terraform-azurerm-linuxscaleset
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-azurerm-linuxscaleset.svg)](https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-azurerm-linuxscaleset.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-azurerm-linuxscaleset/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
@@ -139,7 +139,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-azur
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2023 James Woolfenden
 
 ## License
 
